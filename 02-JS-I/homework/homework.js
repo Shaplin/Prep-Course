@@ -1,14 +1,13 @@
   // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = Holaa;
+const nuevaString = 'Holaa';
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 31;
 
 // Crea una variable booleana:
-const nuevoBool = true 14===14
-;Check your email for a link to reset your password. If it doesn’t appear within a few minutes, check your spam folder.
+const nuevoBool = true; 
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
@@ -29,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:Return str
-Return str;
+return str;
 }
 
 function suma(x, y) {
@@ -132,7 +131,7 @@ function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
 return num * num * num;
-
+}
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
@@ -142,12 +141,12 @@ return Math.pow (num, exponent);
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-var resto= num % 1,
+var resto= num % 1;
 var entero= num - resto;
 if (resto >= 0.5);{
 return entero + 1;
-} else {
-  return entero
+}  {
+  return entero;
 }
 return Math.round(num)
 }
@@ -187,7 +186,7 @@ function agregarSimboloExclamacion(str) {
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
 return str + "!";
-
+}
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
@@ -282,4 +281,4 @@ module.exports = {
   areaDelTriangulo,
   deEuroAdolar,
   esVocal,
-};
+}

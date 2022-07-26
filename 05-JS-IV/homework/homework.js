@@ -103,9 +103,9 @@ function agregarAmigo (usuario, nuevoAmigo) {
   // Tu código:
 var user = {
   amigos : ['Pedro, Sebastian']
-}
 usuario.amigos.push(nuevoAmigo);
 return usuario;
+}
 
 function pasarUsuarioAPremium (usuarios) {
   // "usuarios" es un array de objetos "usuario"
