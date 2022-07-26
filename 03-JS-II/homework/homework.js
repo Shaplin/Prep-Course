@@ -54,7 +54,7 @@ function saludo(idioma) {
 } else {
   return 'Hola!'
 }
-}
+
 function colors(color) {
   //La función recibe un color. Devolver el string correspondiente:
   //En caso que el color recibido sea "blue", devuleve --> "This is blue"
@@ -75,13 +75,13 @@ return "This is orange";
 default:
 return "Color not found";
 }
-}
+
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
 return numero === 10 || numero === 5;
-
+}
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
@@ -98,7 +98,7 @@ function esEntero(numero) {
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
 return numero % 1 === 0;
-
+}
 function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3, devuelve "fizz"
   // Si "numero" es divisible entre 5, devuelve "buzz"
@@ -108,7 +108,7 @@ if (numero % 15 === 0 ) return 'fizzbuzz';
 if (numero % 3 === 0 ) return 'fizz';
 if (numero % 5 === 0 ) return 'buzz';
 return numero;
-
+}
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos.
   //Si num1 es mayor a num2 y a num3 y además es positivo, retornar ---> "Número 1 es mayor y positivo"
@@ -162,8 +162,8 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí
-let arrayTablaDe16 = [
-  for (let i = 0; i < 11; i++) {
+let arrayTablaDe16 = []
+for (let i = 0; i < 11; i++) {
     arrayTablaDe16.push(6 * i)
   }
   return arrayTablaDe16

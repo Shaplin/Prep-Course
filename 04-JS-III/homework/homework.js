@@ -1,5 +1,7 @@
 // No cambies los nombres de las funciones.
 
+const { SearchSource } = require("jest");
+
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
@@ -55,7 +57,7 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
 return palabras.join(' ');
-
+}
 
 
 function arrayContiene(array, elemento) {
@@ -116,8 +118,8 @@ function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
 let = contador = 0;
-for (let i = 0, i < arreglo.length; i++) {
-  if(arreglo[i]> 19) {
+for (let i = 0; i < arreglo.length; i++) {
+  if(arreglo[i] > 19) {
     contador++
   }
 }
@@ -184,7 +186,7 @@ function mayorACien(array) {
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
 var nuevoArray = [];
-for( sea i = 0; i < arreglo.length; i++) {
+for( let i = 0; i < arreglo.length; i++) {
   if (array[i] > 100) {
     nuevoArray.push(array[i])
   }

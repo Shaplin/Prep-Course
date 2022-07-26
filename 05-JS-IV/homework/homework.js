@@ -8,11 +8,11 @@ function crearGato (nombre, edad) {
   // Tu código:
 var objeto = {
   nombre : nombre ,
-  edad = edad ,
-  meow : funcion ( ) {
+  edad : edad ,
+  meow : function ( ) {
 return 'Meow!';
   }
-} ;
+};
 return obj;
 }
 
@@ -23,14 +23,14 @@ function agregarPropiedad (objeto, property) {
   // Tu código:
 objeto[property]= null;
 return objeto;
-
+}
 function invocarMetodo (objeto, metodo) {
   // "metodo" es una cadena que contiene el nombre de un método (funcion) en el objeto
   // Invoca ese método
   // Nada necesita ser devuelto ("returned")
   // Tu código:
 objeto[metodo]();
-
+}
 function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
@@ -80,7 +80,7 @@ if(objeto[propiedad]) {
 } else {
   return false;
 }
-
+}
 function verificarPassword (usuario, password) {
   // Comprueba si la "password" enviada coincide con la propiedad "password" del objeto "usuario"
   // Devuelve "true" si coinciden
@@ -102,8 +102,9 @@ function agregarAmigo (usuario, nuevoAmigo) {
   // Devuelve el objeto "usuario"
   // Tu código:
 var user = {
-  amigos : ['Pedro, Sebastian']
-usuario.amigos.push(nuevoAmigo);
+  amigos : ['Pedro', 'Sebastian']
+}
+  usuario.amigos.push(nuevoAmigo);
 return usuario;
 }
 
@@ -148,8 +149,8 @@ function agregarMetodoCalculoDescuento (producto) {
   // Tu código:
 var product = {
   precio: 10,
-  porcentajeDeDescuento: 5
-  calcularPrecioDescuento:
+  porcentajeDeDescuento: 5,
+  calcularPrecioDescuento: null
 };
 producto.calcularPrecioDescuento = function() {
   return this.precio - ( this.precio * this.porcentajeDeDescuento);
